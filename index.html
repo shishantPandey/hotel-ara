@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="this is a website made by shishant pandey who live in ara"
+    />
+    <meta name="keywords" content="shishant pandey" />
+    <style>
+      .mainforloader {
+        height: 100vh;
+        width: 100vw;
+        position: fixed;
+      }
+
+      .preloader {
+        display: flex;
+        height: 100%;
+        background: #eee;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .dash {
+        margin: 0 15px;
+        width: 35px;
+        height: 15px;
+        border-radius: 8px;
+        background: #ff2cbd;
+      }
+
+      .uno {
+        margin-right: -18px;
+        transform-origin: center left;
+        animation: spin 3s linear infinite;
+      }
+
+      .dos {
+        transform-origin: center right;
+        animation: spin2 3s linear infinite;
+        animation-delay: 0.2s;
+      }
+
+      .tres {
+        transform-origin: center right;
+        animation: spin3 3s linear infinite;
+        animation-delay: 0.3s;
+      }
+
+      .cuatro {
+        transform-origin: center right;
+        animation: spin4 3s linear infinite;
+        animation-delay: 0.4s;
+      }
+
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        25% {
+          transform: rotate(360deg);
+        }
+        30% {
+          transform: rotate(370deg);
+        }
+        35% {
+          transform: rotate(360deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+      .preloader::before {
+        content: "LOADING";
+        color: white;
+        font-size: 3rem;
+        position: absolute;
+        top: 55%;
+        text-align: center;
+      }
+      @keyframes spin2 {
+        0% {
+          transform: rotate(0deg);
+        }
+        20% {
+          transform: rotate(0deg);
+        }
+        30% {
+          transform: rotate(-180deg);
+        }
+        35% {
+          transform: rotate(-190deg);
+        }
+        40% {
+          transform: rotate(-180deg);
+        }
+        78% {
+          transform: rotate(-180deg);
+        }
+        95% {
+          transform: rotate(-360deg);
+        }
+        98% {
+          transform: rotate(-370deg);
+        }
+        100% {
+          transform: rotate(-360deg);
+        }
+      }
+
+      @keyframes spin3 {
+        0% {
+          transform: rotate(0deg);
+        }
+        27% {
+          transform: rotate(0deg);
+        }
+        40% {
+          transform: rotate(180deg);
+        }
+        45% {
+          transform: rotate(190deg);
+        }
+        50% {
+          transform: rotate(180deg);
+        }
+        62% {
+          transform: rotate(180deg);
+        }
+        75% {
+          transform: rotate(360deg);
+        }
+        80% {
+          transform: rotate(370deg);
+        }
+        85% {
+          transform: rotate(360deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      @keyframes spin4 {
+        0% {
+          transform: rotate(0deg);
+        }
+        38% {
+          transform: rotate(0deg);
+        }
+        60% {
+          transform: rotate(-360deg);
+        }
+        65% {
+          transform: rotate(-370deg);
+        }
+        75% {
+          transform: rotate(-360deg);
+        }
+        100% {
+          transform: rotate(-360deg);
+        }
+      }
+    </style>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="animate.css" />
+    <link rel="stylesheet" href="media.css" />
+
+    <title>Hotel Ara shishant pandey</title>
+  </head>
+  <body>
+    <div class="mainforloader">
+      <div class="preloader">
+        <div class="dash uno"></div>
+        <div class="dash dos"></div>
+        <div class="dash tres"></div>
+        <div class="dash cuatro"></div>
+      </div>
+    </div>
+    <div class="hole-website-wrapper">
+      <nav class="navbar">
+        <div id="mnedd" class="navbar-container onlyfornavbar">
+          <input type="checkbox" />
+          <div class="hamburger-lines">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
+          </div>
+          <ul class="menu-items">
+            <li><a href="#showcase">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#food">Variety</a></li>
+            <li><a href="#food-menu">Menu</a></li>
+            <li><a href="#testimonial">Testmonial</a></li>
+            <li><a href="#contact">contact</a></li>
+          </ul>
+          <h1 class="logo">ARA</h1>
+        </div>
+      </nav>
+      <section id="showcase">
+        <div class="showcase-container">
+          <p class="slogon">Eat Healthy Food</p>
+          <a href="#food-menu1">
+            <button id="hedbtn" class="btn">menu</button>
+          </a>
+          <div class="mobile-version">
+            <p id="logo-mb">ARA</p>
+            <p>WEBSITE DESIGNED BY SHISHANT-PANDEY</p>
+          </div>
+        </div>
+      </section>
+      <section id="about" class="container">
+        <div class="about">
+          <div class="about-text">
+            <h2>ABOUT US</h2>
+            <p class="bold">We are delivering Healthy food for last 10 years</p>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum
+              qui ut dolore ratione doloremque aspernatur, voluptates laboriosam
+              consequatur quos! Doloremque delectus modi ratione voluptatem
+              repellat maiores doloribus obcaecati magni error odit labore enim
+              at dignissimos temporibus velit, voluptatibus quasi autem.
+            </p>
+          </div>
+          <div class="aboutimg">
+            <img src="img/about-photo.jpg" alt="about image" />
+          </div>
+        </div>
+      </section>
+      <section id="food">
+        <div class="food-section container">
+          <div class="text-of-food">Variety of Food We Deliver</div>
+          <div class="img-of-food">
+            <div class="overlay">
+              <img src="img/food1.jpg" alt="food-variety" />
+              <div class="overlay-content">
+                <div class="coc">
+                  <div class="overlay-text">FRUITS</div>
+                  <div class="overlay-button btn" id="overa">LEARN MORE</div>
+                </div>
+              </div>
+            </div>
+            <div class="overlay">
+              <img src="img/food2.jpg" alt="food-variety" />
+              <div class="overlay-content">
+                <div class="coc">
+                  <div class="overlay-text">VEGETABLES</div>
+                  <div class="overlay-button btn" id="overb">LEARN MORE</div>
+                </div>
+              </div>
+            </div>
+            <div class="overlay">
+              <img src="img/food3.jpg" alt="food-variety" />
+              <div class="overlay-content">
+                <div class="coc">
+                  <div class="overlay-text">GRAINS</div>
+                  <div class="overlay-button btn" id="overc">LEARN MORE</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="food-menu">
+        <div class="food-menu-wraper container" id="food-menu1">
+          <div class="text-of-food">Food Menu</div>
+          <div class="image-part-of-food-menu">
+            <div class="menu-pic">
+              <img src="img/food-menu1.jpg" />
+              <div class="menu-pics-content">
+                <p class="name">menu Item 1</p>
+                <p class="little-info">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Consequatur neque
+                </p>
+                <p class="price">Price:$120</p>
+              </div>
+            </div>
+            <div class="menu-pic">
+              <img src="img/food-menu2.jpg" />
+              <div class="menu-pics-content">
+                <p class="name">menu Item 2</p>
+                <p class="little-info">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Consequatur neque
+                </p>
+                <p class="price">Price:$120</p>
+              </div>
+            </div>
+
+            <div class="menu-pic">
+              <img src="img/food-menu3.jpg" />
+              <div class="menu-pics-content">
+                <p class="name">menu Item 3</p>
+                <p class="little-info">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Consequatur neque
+                </p>
+                <p class="price">Price:$120</p>
+              </div>
+            </div>
+
+            <div class="menu-pic">
+              <img src="img/food-menu4.jpg" />
+              <div class="menu-pics-content">
+                <p class="name">menu Item 4</p>
+                <p class="little-info">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Consequatur neque
+                </p>
+                <p class="price">Price:$120</p>
+              </div>
+            </div>
+
+            <div class="menu-pic">
+              <img src="img/food-menu5.jpg" />
+              <div class="menu-pics-content">
+                <p class="name">menu Item 5</p>
+                <p class="little-info">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Consequatur neque
+                </p>
+                <p class="price">Price:$120</p>
+              </div>
+            </div>
+
+            <div class="menu-pic">
+              <img src="img/food-menu6.jpg" />
+              <div class="menu-pics-content">
+                <p class="name">menu Item 6</p>
+                <p class="little-info">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Consequatur neque
+                </p>
+                <p class="price">Price:$120</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="testimonial">
+        <div class="testimonial-wrapper container">
+          <div class="text-of-food">FEEDBACK OF OUR CUSTOMER</div>
+          <div class="fedback-container">
+            <div class="reviews">
+              <div class="stars">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <div class="text-of-feedback"></div>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero,
+                asperiores! Corrupti modi nihil ad sequi.
+              </div>
+              <div class="img-of-customer">
+                <img src="img/male-photo3.jpg" alt="" />
+                <div class="name-of-customer">RONALDO</div>
+              </div>
+            </div>
+            <div class="reviews">
+              <div class="stars">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <div class="text-of-feedback">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Vero, asperiores! Corrupti modi nihil ad sequi.
+                </div>
+              </div>
+              <div class="img-of-customer">
+                <img src="img/male-photo1.jpg" alt="" />
+                <div class="name-of-customer">JOHN</div>
+              </div>
+            </div>
+            <div class="reviews">
+              <div class="stars">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <div class="text-of-feedback"></div>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero,
+                asperiores! Corrupti modi nihil ad sequi.
+              </div>
+              <div class="img-of-customer">
+                <img src="img/male-photo2.jpg" alt="" />
+                <div class="name-of-customer">MICHLE</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact">
+        <div class="contact-wrapper container">
+          <div class="img-part-contact">
+            <img src="img/restraunt-image.jpg" alt="" />
+          </div>
+          <div class="contact-form">
+            <div class="text-contact">Contact US</div>
+            <form method="POST" name="contact">
+              <input type="hidden" name="form-name" value="contact" />
+              <p>
+                <label for="name">Name <i class="fa-solid fa-user"></i></label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Enter your Name"
+                  required="required"
+                />
+              </p>
+              <p>
+                <label for="email">Email</label>
+                <input
+                  type="text"
+                  id="email"
+                  name="email"
+                  placeholder="Enter your Email"
+                  required="required"
+                />
+              </p>
+
+              <p>
+                <label for="message">Message </label>
+                <textarea
+                  rows="5"
+                  id="message"
+                  placeholder="write here something"
+                  name="message"
+                ></textarea>
+              </p>
+              <p>
+                <button type="submit" class="btn">Submit</button>
+              </p>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section id="footer">
+        <p
+          style="
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: white;
+          "
+        >
+          @ all copyright reserved under section 194
+        </p>
+        <div class="icons">
+          <p><i class="fa-brands fa-facebook"></i></p>
+          <p><i class="fa-brands fa-instagram"></i></p>
+          <p><i class="fa-brands fa-linkedin"></i></p>
+        </div>
+      </section>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>

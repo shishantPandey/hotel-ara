@@ -1,0 +1,79 @@
+@keyframes lts {
+  100% {
+    transform: translate(0);
+  }
+}
+.aboutimg,
+.about-text {
+  animation: lts 1s ease-in-out forwards;
+}
+
+.overlay {
+  position: relative;
+}
+.overlay-content {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  left: 0;
+}
+.coc {
+  z-index: 11;
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+.overlay-button {
+  transform: translateX(250%);
+}
+.overlay-text {
+  transform: translateX(-250%);
+}
+.overlay:hover .overlay-text {
+  animation: lts 0.5s ease-in-out forwards;
+}
+.overlay:hover .overlay-button {
+  animation: lts 0.6s ease-in-out forwards;
+}
+.overlay:hover .overlay-button .overlay:hover .coc {
+  opacity: 1;
+}
+.coc .overlay-text {
+  font-size: 3rem;
+  font-weight: 600;
+  color: red;
+}
+
+.overlay-content::before,
+.overlay-content::after {
+  content: "";
+  width: 95%;
+  height: 47%;
+  background-color: black;
+  position: absolute;
+  right: 0;
+  left: 0;
+  margin: auto;
+  opacity: 0;
+  transition: all 0.8s;
+}
+.overlay-content::before {
+  top: -20%;
+}
+.overlay-content::after {
+  bottom: -20%;
+}
+.overlay:hover .overlay-content::before {
+  top: 3%;
+  opacity: 0.7;
+}
+.overlay:hover .overlay-content::after {
+  bottom: 3%;
+  opacity: 0.7;
+}

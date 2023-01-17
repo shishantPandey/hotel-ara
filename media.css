@@ -1,0 +1,240 @@
+@media (min-width: 0px) and (max-width: 730px) {
+  .bold {
+    font-size: 1.5rem;
+  }
+  #about {
+    width: 100vw;
+  }
+
+  .aboutimg,
+  .about-text {
+    padding: 0px;
+  }
+}
+@media (max-width: 500px) {
+  .about {
+    flex-direction: column;
+  }
+  .overlay .coc .overlay-button {
+    padding: 0;
+  }
+  .overlay .coc .overlay-text {
+    font-size: 1rem;
+  }
+  body #food .overlay .coc .overlay-button {
+    font-size: 0.5rem;
+    font-weight: 300;
+  }
+}
+@media (max-width: 900px) {
+  html body #contact {
+    width: 95vw;
+  }
+}
+@media (max-width: 600px) {
+  .image-part-of-food-menu {
+    flex-direction: column;
+  }
+  .image-part-of-food-menu .menu-pic {
+    width: 100%;
+  }
+  html body #about {
+    width: 95vw;
+  }
+
+  html body .navbar .navbar-container {
+    position: relative;
+    height: 100vh;
+    min-width: 20vw;
+  }
+  html body .navbar .navbar-container .menu-items {
+    transform: translateX(-200%);
+    transition: transform 0.3s ease-in-out;
+    animation: none;
+  }
+  html body .navbar .navbar-container input[type="checkbox"] {
+    position: fixed;
+    z-index: 60;
+    display: block;
+    height: 40px;
+    opacity: 0;
+    width: 50px;
+  }
+  html body .overlay-button {
+    padding: 5px;
+    border-radius: 25%;
+  }
+  html
+    body
+    .navbar
+    .navbar-container
+    input[type="checkbox"]:checked
+    ~ .menu-items {
+    transform: translateX(0%);
+    position: fixed;
+    height: 100vh;
+    background: red;
+    z-index: 50;
+    min-width: 20vw;
+  }
+
+  .menu-items li a {
+    color: black;
+    font-weight: 500;
+    font-size: 1.5rem;
+
+    display: block;
+  }
+  .menu-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  #mnedd {
+    position: fixed;
+
+    z-index: 69;
+  }
+  #showcase {
+    height: 50vh;
+    background-image: url("img/header-image2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.5;
+  }
+  .hamburger-lines {
+    position: fixed;
+
+    height: 30px;
+    width: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 55;
+  }
+  .line {
+    display: block;
+    background-color: black;
+    z-index: 56;
+    height: 5px;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+  }
+
+  html
+    body
+    .navbar
+    .navbar-container
+    input[type="checkbox"]:checked
+    ~ .hamburger-lines
+    .line1 {
+    transform-origin: 0% 0%;
+    position: relative;
+    top: 2px;
+    left: 3px;
+    transform: rotate(45deg);
+  }
+  html
+    body
+    .navbar
+    .navbar-container
+    input[type="checkbox"]:checked
+    ~ .hamburger-lines
+    .line3 {
+    transform-origin: 0% 0%;
+    transform: rotate(-45deg);
+    position: relative;
+    right: 1px;
+  }
+  html
+    body
+    .navbar
+    .navbar-container
+    input[type="checkbox"]:checked
+    ~ .hamburger-lines
+    .line2 {
+    display: none;
+  }
+  html
+    body
+    .navbar
+    .navbar-container
+    input[type="checkbox"]:checked
+    ~ .hamburger-lines {
+    margin: 5px;
+  }
+  .mobile-version {
+    display: block;
+  }
+
+  .mobile-version #logo-mb {
+    font-size: 10rem;
+    font-weight: bolder;
+  }
+  /*         ********************************** */
+  .onlyfornavbar {
+    width: 20vw;
+  }
+  .navbar-container {
+    display: block;
+  }
+  .logo {
+    display: none;
+  }
+  .menu-items {
+    display: flex;
+  }
+  .menu-items li a {
+    display: block;
+  }
+  .navbar {
+    width: 20vw;
+  }
+  .contact-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .img-part-contact {
+    flex-grow: 1;
+    width: 100%;
+  }
+  .contact-form {
+    flex-grow: 1;
+    width: 100%;
+  }
+  .slogon,
+  #hedbtn {
+    display: none;
+  }
+  .showcase-container {
+    display: flex;
+
+    justify-content: center;
+  }
+  .mobile-version {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+}
+@media (max-width: 400px) {
+  .mobile-version {
+    font-size: 1rem;
+  }
+  .fedback-container {
+    flex-direction: column;
+  }
+  .reviews {
+    flex-direction: row;
+    width: 100%;
+  }
+  .img-of-customer {
+    order: 1;
+  }
+  .stars {
+    order: 2;
+  }
+}
